@@ -1,0 +1,7 @@
+﻿one=第一首
+two=第二首
+three=第三首
+four=第四首
+mute=静音
+bullet=子弹
+effect=特效
