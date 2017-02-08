@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D6EA4C3A-1054-D5B9-55EE-626DA7048503}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
+    <CompilerResponseFile></CompilerResponseFile>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
+    <UnityVersion>5.4.2f2</UnityVersion>
+    <RootNamespace></RootNamespace>
+    <LangVersion Condition=" '$(VisualStudioVersion)' != '10.0' ">4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Debug\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Debug\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_4_2;UNITY_5_4;UNITY_5;UNITY_ANALYTICS;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_EDITOR_RETINA;ENABLE_RETINA_GUISTYLES;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;ENABLE_VSTU</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Release\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Release\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_4_2;UNITY_5_4;UNITY_5;UNITY_ANALYTICS;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_EDITOR_RETINA;ENABLE_RETINA_GUISTYLES;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;ENABLE_VSTU</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="Boo.Lang" />
+    <Reference Include="UnityScript.Lang" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="protobuf-net">
+      <HintPath>Assets\Framework\Plugin\protobuf-net.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Framework\FSM\AI\ChaseState.cs" />
+    <Compile Include="Assets\Framework\FSM\AI\NPCController.cs" />
+    <Compile Include="Assets\Framework\FSM\AI\PatrolState.cs" />
+    <Compile Include="Assets\Framework\FSM\AI\PlayerMove.cs" />
+    <Compile Include="Assets\Framework\FSM\FSMState.cs" />
+    <Compile Include="Assets\Framework\FSM\FSMSystem.cs" />
+    <Compile Include="Assets\Framework\MVCS\Command\CommandEvent.cs" />
+    <Compile Include="Assets\Framework\MVCS\Command\RequestScoreCommand.cs" />
+    <Compile Include="Assets\Framework\MVCS\Command\StartCommand.cs" />
+    <Compile Include="Assets\Framework\MVCS\Command\UpdateScoreCommand.cs" />
+    <Compile Include="Assets\Framework\MVCS\GameView.cs" />
+    <Compile Include="Assets\Framework\MVCS\Model\ScoreModel.cs" />
+    <Compile Include="Assets\Framework\MVCS\Root.cs" />
+    <Compile Include="Assets\Framework\MVCS\Service\IScoreService.cs" />
+    <Compile Include="Assets\Framework\MVCS\Service\ScoreService.cs" />
+    <Compile Include="Assets\Framework\MVCS\Service\ServiceEvent.cs" />
+    <Compile Include="Assets\Framework\MVCS\View\CubeMediator.cs" />
+    <Compile Include="Assets\Framework\MVCS\View\CubeView.cs" />
+    <Compile Include="Assets\Framework\MVCS\View\MediatorEvent.cs" />
+    <Compile Include="Assets\Framework\Manager\AudioManager.cs" />
+    <Compile Include="Assets\Framework\Manager\LocalizationManager.cs" />
+    <Compile Include="Assets\Framework\Manager\PoolManager.cs" />
+    <Compile Include="Assets\Framework\Pool\DeactiveForTime.cs" />
+    <Compile Include="Assets\Framework\Pool\GameObjectPool.cs" />
+    <Compile Include="Assets\Framework\Pool\GameObjectPoolList.cs" />
+    <Compile Include="Assets\Framework\Test\AllTest.cs" />
+    <Compile Include="Assets\Framework\Test\LocalizationText.cs" />
+    <Compile Include="Assets\Framework\Test\ProtobufTest.cs" />
+    <Compile Include="Assets\Framework\Test\User.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\game\GameContext.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\game\GameRoot.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\game\controller\GameEvent.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\game\controller\GameOverCommand.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\game\controller\RemoveSocialContextCommand.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\game\controller\ReplayGameCommand.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\game\controller\ShipDestroyedCommand.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\game\controller\UpdateScoreCommand.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\game\controller\startupSequence\StartAppCommand.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\game\controller\startupSequence\StartGameCommand.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\game\model\IScore.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\game\model\ScoreModel.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\game\util\GameLoop.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\game\util\IGameTimer.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\game\view\ClickDetector.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\game\view\EnemyMediator.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\game\view\EnemyView.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\game\view\ScoreboardMediator.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\game\view\ScoreboardView.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\game\view\ShipMediator.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\game\view\ShipView.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\main\MainContext.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\main\MainRoot.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\main\controller\GameCompleteCommand.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\main\controller\LoadSceneCommand.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\main\controller\MainEvent.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\main\controller\StartCommand.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\social\SocialContext.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\social\SocialRoot.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\social\controller\CreateFriendListCommand.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\social\controller\CreateUserTileCommand.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\social\controller\GameCompleteCommand.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\social\controller\LoadSceneCommand.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\social\controller\RemoveContextCommand.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\social\controller\SocialEvent.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\social\controller\StartCommand.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\social\service\FacebookService.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\social\service\GoogleService.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\social\service\ISocialService.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\social\service\UserVO.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\social\view\AwardView.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\social\view\AwardViewMediator.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\social\view\UserTileMediator.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\social\view\UserTileView.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\myfirstproject\MyFirstContext.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\myfirstproject\MyFirstProjectRoot.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\myfirstproject\controller\CallWebServiceCommand.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\myfirstproject\controller\ExampleEvent.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\myfirstproject\controller\StartCommand.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\myfirstproject\model\ExampleModel.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\myfirstproject\model\IExampleModel.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\myfirstproject\service\ExampleService.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\myfirstproject\service\IExampleService.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\myfirstproject\view\ClickDetector.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\myfirstproject\view\ExampleMediator.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\myfirstproject\view\ExampleView.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\signalsproject\SignalsContext.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\signalsproject\SignalsRoot.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\signalsproject\controller\CallWebServiceCommand.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\signalsproject\controller\StartCommand.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\signalsproject\model\ExampleModel.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\signalsproject\model\IExampleModel.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\signalsproject\service\ExampleService.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\signalsproject\service\IExampleService.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\signalsproject\signal\CallWebServiceSignal.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\signalsproject\signal\FulfillWebServiceRequestSignal.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\signalsproject\signal\ScoreChangedSignal.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\signalsproject\signal\StartSignal.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\signalsproject\view\ClickDetector.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\signalsproject\view\ExampleMediator.cs" />
+    <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\signalsproject\view\ExampleView.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\ReadMe.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\command\api\CommandExceptionType.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\command\api\CommandKeys.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\command\api\ICommand.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\command\api\ICommandBinder.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\command\api\ICommandBinding.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\command\api\IPooledCommandBinder.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\command\impl\Command.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\command\impl\CommandBinder.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\command\impl\CommandBinding.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\command\impl\CommandException.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\command\impl\EventCommand.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\command\impl\EventCommandBinder.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\command\impl\SignalCommandBinder.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\context\api\ContextEvent.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\context\api\ContextExceptionType.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\context\api\ContextKeys.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\context\api\ContextStartupFlags.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\context\api\IContext.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\context\api\IContextView.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\context\api\ICrossContextCapable.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\context\impl\Context.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\context\impl\ContextException.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\context\impl\ContextView.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\context\impl\CrossContext.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\context\impl\CrossContextBridge.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\context\impl\MVCSContext.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\dispatcher\api\DispatcherExceptionType.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\dispatcher\api\IDispatcher.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\dispatcher\api\ITriggerProvider.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\dispatcher\api\ITriggerable.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\dispatcher\eventdispatcher\api\EventCallbackType.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\dispatcher\eventdispatcher\api\EventDispatcherExceptionType.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\dispatcher\eventdispatcher\api\IEvent.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\dispatcher\eventdispatcher\api\IEventBinding.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\dispatcher\eventdispatcher\api\IEventDispatcher.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\dispatcher\eventdispatcher\impl\EventBinding.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\dispatcher\eventdispatcher\impl\EventDispatcher.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\dispatcher\eventdispatcher\impl\EventDispatcherException.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\dispatcher\eventdispatcher\impl\TmEvent.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\dispatcher\impl\DispatcherException.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\implicitBind\ImplementorAttribute.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\implicitBind\api\IImplicitBinder.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\implicitBind\impl\ImplicitBinder.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\injector\InjectAttribute.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\injector\api\ICrossContextInjectionBinder.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\injector\api\IInjectionBinder.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\injector\api\IInjectionBinding.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\injector\api\IInjector.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\injector\api\IInjectorFactory.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\injector\api\InjectionBindingScope.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\injector\api\InjectionBindingType.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\injector\api\InjectionExceptionType.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\injector\impl\CrossContextInjectionBinder.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\injector\impl\InjectionBinder.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\injector\impl\InjectionBinding.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\injector\impl\InjectionException.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\injector\impl\Injector.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\injector\impl\InjectorFactory.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\mediation\api\IMediationBinder.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\mediation\api\IMediationBinding.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\mediation\api\IMediator.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\mediation\api\IView.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\mediation\api\MediationEvent.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\mediation\api\MediationExceptionType.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\mediation\impl\EventMediator.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\mediation\impl\EventView.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\mediation\impl\MediationBinder.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\mediation\impl\MediationBinding.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\mediation\impl\MediationException.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\mediation\impl\Mediator.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\mediation\impl\View.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\pool\api\IPool.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\pool\api\IPoolable.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\pool\api\PoolExceptionType.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\pool\api\PoolInflationType.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\pool\api\PoolOverflowBehavior.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\pool\impl\Pool.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\pool\impl\PoolException.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\reflector\api\IReflectedClass.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\reflector\api\IReflectionBinder.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\reflector\api\ReflectionExceptionType.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\reflector\impl\ReflectedClass.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\reflector\impl\ReflectionBinder.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\reflector\impl\ReflectionException.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\sequencer\api\ISequenceBinding.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\sequencer\api\ISequenceCommand.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\sequencer\api\ISequencer.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\sequencer\api\SequencerExceptionType.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\sequencer\impl\EventSequenceCommand.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\sequencer\impl\EventSequencer.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\sequencer\impl\SequenceBinding.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\sequencer\impl\SequenceCommand.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\sequencer\impl\Sequencer.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\sequencer\impl\SequencerException.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\signal\api\IBaseSignal.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\signal\api\SignalExceptionType.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\signal\impl\BaseSignal.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\signal\impl\Signal.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\extensions\signal\impl\SignalException.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\framework\api\BinderExceptionType.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\framework\api\BindingConst.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\framework\api\BindingConstraintType.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\framework\api\IBinder.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\framework\api\IBinding.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\framework\api\IInstanceProvider.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\framework\api\IManagedList.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\framework\api\ISemiBinding.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\framework\impl\Binder.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\framework\impl\BinderException.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\framework\impl\Binding.cs" />
+    <Compile Include="Assets\StrangeIoC\scripts\strange\framework\impl\SemiBinding.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Framework\Resources\AudioInfo.txt" />
+    <None Include="Assets\Framework\Resources\UserInfo.txt" />
+    <None Include="Assets\Framework\Resources\localization\Chinese.txt" />
+    <None Include="Assets\Framework\Resources\localization\English.txt" />
+    <None Include="Assets\StrangeIoC\LICENSE-2.0.txt" />
+    <None Include="Assets\StrangeIoC\README.txt" />
+    <None Include="Assets\StrangeIoC\examples\Assets\scripts\multiplecontexts\ReadMe.txt" />
+    <None Include="Assets\StrangeIoC\examples\Assets\scripts\myfirstproject\ReadMe.txt" />
+    <None Include="Assets\StrangeIoC\examples\Assets\scripts\signalsproject\ReadMe.txt" />
+    <None Include="Assets\StrangeIoC\scripts\strange\extensions\ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
+</Project>

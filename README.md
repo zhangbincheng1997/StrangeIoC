@@ -115,22 +115,22 @@ private LocalizationManager()
 ## FSM
 > * `enum` Transition 状态转换条件
 > * `enum` StateId 状态唯一标识
-> * FSMState(State基类)
-`Dictionary<Transition, StateId>` map
-`FSMSystem` fsm
-`void` AddTransition(Transition trans, StateId id)
-`void` RemoveTransition(Transition trans)
-`StateId` GetState(Transition trans)
-`virtual void` DoBeforeEnter() { }  // 进入状态之前
-`virtual void` DoBeforeExit() { }  // 离开状态之前
-`abstract void` DoUpdate();  // 状态中
-> * FSMSystem(状态机管理类)
-`FSMState` currentState
-`Dictionary<StateId, FSMState>` stateDict
-`void` AddState(FSMState state)
-`void` RemoveState(FSMState state)
-`void` DoTransition(Transition trans)
-`void` StartState(StateId id)
+> * FSMState(State基类)  
+`Dictionary<Transition, StateId>` map  
+`FSMSystem` fsm  
+`void` AddTransition(Transition trans, StateId id)  
+`void` RemoveTransition(Transition trans)  
+`StateId` GetState(Transition trans)  
+`virtual void` DoBeforeEnter() { }  // 进入状态之前  
+`virtual void` DoBeforeExit() { }  // 离开状态之前  
+`abstract void` DoUpdate();  // 状态中  
+> * FSMSystem(状态机管理类)  
+`FSMState` currentState  
+`Dictionary<StateId, FSMState>` stateDict  
+`void` AddState(FSMState state)  
+`void` RemoveState(FSMState state)  
+`void` DoTransition(Transition trans)  
+`void` StartState(StateId id)  
 > * NPCController
 > * ChaseState
 > * PatrolState
