@@ -31,7 +31,7 @@ public class FSMSystem
     {
         if (state == null)
         {
-            Debug.LogError("state is Null");
+            Debug.LogError("State is Null");
             return;
         }
         if (stateDict.ContainsKey(state.StateId))

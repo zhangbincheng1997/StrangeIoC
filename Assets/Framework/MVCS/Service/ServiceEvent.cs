@@ -1,6 +1,4 @@
-﻿using UnityEngine;
-
-public enum ServiceEvent
+﻿public enum ServiceEvent
 {
     RequestScore,
     UpdateScore,

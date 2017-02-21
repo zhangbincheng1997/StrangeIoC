@@ -6,7 +6,7 @@
 > * `Root` : ContextView
 > * `GameView` : MVCSContext
 > * `Model` : 模型类自身
-> * `View` : View层控制视图，Mediator枚举类和Mediator层
+> * `View` : Mediator枚举类和Mediator类
 > * `Command` : CommandEvent枚举和Command类
 > * `Service` : ServiceEvent枚举和Service类
 ```
@@ -26,7 +26,7 @@ protected override void mapBindings()
 }
 ```
 
-## AudioManager
+## AudioManager 音效管理类
 ```
 ......
 private string savePath = "AudioInfo";
@@ -49,7 +49,7 @@ private AudioManager()
 }
 ```
 
-## PoolManager
+## PoolManager 对象池
 ```
 // GameObjectPool
 ......
@@ -88,7 +88,7 @@ private PoolManager()
 }
 ```
 
-## Localization
+## Localization 本地化
 ```
 ......
 public const string Language = English;
@@ -112,10 +112,10 @@ private LocalizationManager()
 }
 ```
 
-## FSM
-> * `enum` Transition 状态转换条件
-> * `enum` StateId 状态唯一标识
-> * FSMState(State基类)  
+## FSM 状态机
+> * `enum` Transition 状态转换条件  
+> * `enum` StateId 状态唯一标识  
+> * FSMState State基类  
 `Dictionary<Transition, StateId>` map  
 `FSMSystem` fsm  
 `void` AddTransition(Transition trans, StateId id)  
@@ -124,38 +124,22 @@ private LocalizationManager()
 `virtual void` DoBeforeEnter() { }  // 进入状态之前  
 `virtual void` DoBeforeExit() { }  // 离开状态之前  
 `abstract void` DoUpdate();  // 状态中  
-> * FSMSystem(状态机管理类)  
+> * FSMSystem 状态机管理类  
 `FSMState` currentState  
 `Dictionary<StateId, FSMState>` stateDict  
 `void` AddState(FSMState state)  
 `void` RemoveState(FSMState state)  
 `void` DoTransition(Transition trans)  
 `void` StartState(StateId id)  
-> * NPCController
-> * ChaseState
-> * PatrolState
-> * PlayerMove
-```
-// PlayerMove控制人物走动
-......
-void Update()
-{
-    float h = Input.GetAxis("Horizontal");
-    float v = Input.GetAxis("Vertical");
-    if (Mathf.Abs(h) > 0.05f || Mathf.Abs(v) > 0.05f)
-    {
-        Vector3 targetPos = new Vector3(h, 0, v);
-        mRigidbody.velocity = targetPos * speed;
-        transform.rotation = Quaternion.LookRotation(targetPos);
-    }
-    else
-    {
-        mRigidbody.velocity = Vector3.zero;
-    }
-}
-```
+> * NPCController NPC控制器  
+> * ChaseState 追逐状态  
+> * PatrolState 巡逻状态  
+> * PlayerMove 角色移动  
 
-## Protobuf
+## Protobuf 传输格式
+> * 首先将 protobuf-net.dll 复制到 Unity工程的 Plugins 目录下
+> * 序列化：把对象转换为字节序列的过程。
+> * 反序列化：把字节序列恢复为对象的过程。
 ```
 ......
 using ProtoBuf;

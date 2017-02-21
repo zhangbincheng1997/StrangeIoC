@@ -1,6 +1,4 @@
-﻿using UnityEngine;
-
-public enum MediatorEvent
+﻿public enum MediatorEvent
 {
     ScoreChange,
     ClickDown,

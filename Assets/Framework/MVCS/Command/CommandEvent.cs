@@ -1,6 +1,4 @@
-﻿using UnityEngine;
-
-public enum CommandEvent
+﻿public enum CommandEvent
 {
     RequestScore,
     UpdateScore,
